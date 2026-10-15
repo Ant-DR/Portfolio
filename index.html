@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fufurweb.css">
+</head>
+<body>
+
+  <!-- ============================================
+       THE FRAME — Persistent UI Border
+       ============================================ -->
+  <div class="frame" aria-hidden="true">
+    <div class="frame__border"></div>
+    <div class="frame__corner frame__corner--tr"></div>
+    <div class="frame__corner frame__corner--bl"></div>
+    <div class="frame__corner frame__corner--br"></div>
+  </div>
+
+  <!-- Left sidebar — Counter -->
+  <aside class="frame__sidebar-left">
+    <div class="frame__counter">
+      <span class="current" id="plateCounter">20</span> 26 — Kollektion
+    </div>
+  </aside>
+
+  <!-- Right sidebar — Navigation -->
+  <nav class="frame__sidebar-right" aria-label="Main navigation">
+    <ul class="frame__nav">
+      <li><a href="#lookbook">Anfang</a></li>
+      <li><a href="#about">Über</a></li>
+      <li><a href="#journal">Leistungen</a></li>
+      <li><a href="#refe">Referenz</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="#lookbook">
+    <span>Lookbook</span>
+  </a>
+  <a href="#journal">
+    <span>Journal</span>
+  </a>
+  <a href="#refe">
+    <span>Referenzen</span>
+  </a>
+  <a href="#contact">
+    <span>Kontakt</span>
+  </a>
+</nav>
+
+  <!-- Bottom frame — Footer -->
+  <footer class="frame__bottom">
+    <ul class="frame__social">
+      <li><a href="https://www.linkedin.com/in/antonio-drmac/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </footer>
+
+  <!-- ============================================
+       MAIN CONTENT — The Lookbook
+       ============================================ -->
+  <main class="lookbook" id="lookbook">
+    <section class="lookbook__plate" data-plate="20">
+      <!-- Hero -->
+      <section class="lookbook__hero">
+        <div class="lookbook__hero-bg">
+          <img src="images/kirill-prikhodko-kRp5woiVDaY-unsplash.jpg" alt="" loading="eager">
+        </div>
+        <div class="lookbook__hero-content">
+          <h1 class="lookbook__title">
+            Portfolio
+            <em>Antonio Drmac</em>
+          </h1>
+          <p class="lookbook__subtitle">Technische Universität Dortmund</p>
+        </div>
+        <div class="lookbook__scroll-cue">
+          <span>Scrollen</span>
+          <div class="lookbook__scroll-line"></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Interstitial quote -->
+    <section class="lookbook__plate lookbook__plate--right" data-plate="01">
+      <section class="lookbook__interstitial" id="about">
+        <div class="lookbook__interstitial-inner">
+          <cite>Kurzprofil</cite>
+          <p>Ich studiere Maschinenbau an der TU Dortmund und interessiere mich besonders dafür, wie technische Systeme funktionieren und wie sie sich optimieren lassen. Mich begeistert es, neue Technologien kennenzulernen und ingenieurwissenschaftliche Denkweisen auf praktische Problemstellungen anzuwenden.</p>
+          <br>
+          <br>
+          <cite>Perspektiven</cite>
+          <p>Mein berufliches Ziel ist es, als Ingenieur in der Produktion tätig zu sein und mich insbesondere auf die Entwicklung und Konstruktion von Groß-Baukonstruktionen zu spezialisieren.</p>
+          <br>
+          <br>
+          <cite>Motivation</cite>
+          <p>Ich sehe meine Arbeit als Verantwortung gegenüber der Menschheit. Dieses Arbeitsumfeld bietet mir die Möglichkeit, meine fachlichen Kompetenzen weiterzuentwickeln und Werte wie Disziplin, Integrität und Ehrlichkeit aktiv zu leben.</p>
+        </div>
+      </section>
+    </section>
+
+    <!-- Plate 05 -->
+    <section class="lookbook__plate lookbook__plate--right" data-plate="02">
+      <img class="lookbook__plate-image"
+           src="images/Welle1.jpeg"
+           alt="Panoramic view through architectural framework"
+           loading="lazy">
+      <div class="lookbook__plate-meta">
+        <div class="lookbook__plate-number">02</div>
+        <h2 class="lookbook__plate-title">Welle-Naben-Verbindung</h2>
+        <p class="lookbook__plate-caption">Zahnrad, Kugellager, Passfeder, Sicherungsring, Nutmutter mit Sicherungsblech und Unterlegscheibe.</p>
+      </div>
+    </section>
+<p></p>
+    <p><h2 style="text-align: center;" class="lookbook__plate-title">Und</h2></p>
+<p></p>
+    <!-- Plate 06 -->
+    <section class="lookbook__plate" data-plate="03">
+      <img class="lookbook__plate-image"
+           src="images/welle11.jpeg"
+           alt="Evening interior with warm ambient lighting"
+           loading="lazy">
+      <div class="lookbook__plate-meta">
+        <div class="lookbook__plate-number">03</div>
+        <h2 class="lookbook__plate-title">Vierzylindermotor</h2>
+        <p class="lookbook__plate-caption">Kolben, Kolbenbolzen, Pleuel, Kurbelwelle und Kolbenringe.</p>
+      </div>
+    </section>
+
+    <!-- Journal -->
+    <section class="lookbook__plate" data-plate="04">
+      <section class="lookbook__journal" id="journal">
+        <div class="lookbook__journal-inner">
+          <h2 class="lookbook__journal-heading">Leistungen👆</h2>
+          <div class="lookbook__journal-spread">
+
+            <!-- Left: Entry list -->
+            <ul class="lookbook__journal-list">
+              <li class="lookbook__journal-entry" data-journal="0">
+                <div class="lookbook__journal-entry-header">
+                  <span class="lookbook__journal-date">Sept 2026</span>
+                  <h3 class="lookbook__journal-title">Technische Zeichnung</h3>
+                  <span class="lookbook__journal-tag">Design</span>
+                </div>
+              </li>
+              <li class="lookbook__journal-entry" data-journal="1">
+                <div class="lookbook__journal-entry-header">
+                  <span class="lookbook__journal-date">Okt 2026</span>
+                  <h3 class="lookbook__journal-title">Zerspanung</h3>
+                  <span class="lookbook__journal-tag">Verfahren</span>
+                </div>
+              </li>
+              <li class="lookbook__journal-entry" data-journal="2">
+                <div class="lookbook__journal-entry-header">
+                  <span class="lookbook__journal-date">Sept 2026</span>
+                  <h3 class="lookbook__journal-title">Blog über Wälzlager</h3>
+                  <span class="lookbook__journal-tag">Dokumentation</span>
+                </div>
+              </li>
+              <li class="lookbook__journal-entry" data-journal="3">
+                <div class="lookbook__journal-entry-header">
+                  <span class="lookbook__journal-date">Juni 2026</span>
+                  <h3 class="lookbook__journal-title">CAD</h3>
+                  <span class="lookbook__journal-tag">3D Design</span>
+                </div>
+              </li>
+            </ul>
+            
+            <!-- Right: Reading panel -->
+            <div class="lookbook__journal-panel">
+              <button class="lookbook__journal-close" aria-label="Close panel"></button>
+  
+              <div class="lookbook__journal-panel-empty" data-journal-content="4">
+                <span>Einen Eintrag zum Lesen auswählen.</span>
+              </div>
+
+              <article class="lookbook__journal-content" data-journal-content="0">
+                <div class="lookbook__journal-content-tag">Design — Inkl. GD&T</div>
+                <h4 class="lookbook__journal-content-title">Technische Zeichnung einer Welle</h4>
+                <div class="lookbook__journal-content-body">
+                  <div style="width: 74%; max-width: 1200px; margin: 1px auto; border: 2px solid #333;">
+                    <img src="images/Screenshot 2026-10-09 144334.png" style="width: 100%; height: auto; display: block;">
+                  </div>
+                </div>
+                <div class="lookbook__journal-content-footer">
+                  <a href="https://lnkd.in/p/esr9h_tF" class="lookbook__journal-read-more" target="_blank">Mehr sehen</a>
+                  <span class="lookbook__journal-read-time">24 Sept, 2026</span>
+                </div>
+              </article>
+
+              <article class="lookbook__journal-content" data-journal-content="1">
+                <div class="lookbook__journal-content-tag">CNC-Fräser, Drehmaschine, Schweißen u.Ä. </div>
+                <h4 class="lookbook__journal-content-title">Briefsiegel-Set</h4>
+                <div class="lookbook__journal-content-body">
+                 In der Lage, verschiedene Bearbeitungsmaschinen zu bedienen und deren Bearbeitungsparameter anzupassen.
+                  <div style="width: 60%; max-width: 1200px; margin: 1px auto; border: 2px solid #333;">
+                    <img src="images/Briefsiegel fertig.jpeg" style="width: 100%; height: auto; display: block;">
+                  </div>
+                <div class="lookbook__journal-content-footer">
+                  <a href="https://lnkd.in/p/ecCqCcB6" class="lookbook__journal-read-more" target="_blank">Idee</a>
+                  <a href="https://lnkd.in/p/eWxYakpK" class="lookbook__journal-read-more" target="_blank">Vorgehen</a>
+                  <span class="lookbook__journal-read-time">8 Okt, 2026</span>
+                </div>
+              </article>
+
+              <article class="lookbook__journal-content" data-journal-content="2">
+                <div class="lookbook__journal-content-tag">7 Seiten — 8 min lesen</div>
+                <h4 class="lookbook__journal-content-title">Blog über Wälzlager</h4>
+                <div class="lookbook__journal-content-body">
+                  <p>Fundamentales Wissen in der Ingenieursbranche. Nahm das Wissen, das ich hatte, und fasste es kurz zusammen, um anderen Neulingen zu helfen.</p>
+                  <p>Es soll meine Darstellungsweise sowie einen strukturierten Ablauf meiner Arbeit zeigen.</p>
+                </div>
+                <div class="lookbook__journal-content-footer">
+                  <a href="https://lnkd.in/p/eVeVd_h3" class="lookbook__journal-read-more" target="_blank">Vollständigen Artikel lesen</a>
+                  <span class="lookbook__journal-read-time">28 Sept, 2026</span>
+                </div>
+              </article>
+
+              <article class="lookbook__journal-content" data-journal-content="3">
+                <div class="lookbook__journal-content-tag">CAD Designs</div>
+                <h4 class="lookbook__journal-content-title">Stirnradgetriebe</h4>
+                <div class="lookbook__journal-content-body">
+                  <p>Alle Maßen (Modul, Zähnezahl, Durchmesser) berechnet und verbunden. Plugin installiert für eine leichte Erstellung der Zahnräder.</p>
+                </div>
+                <div class="lookbook__journal-content-footer">
+                  <a href="https://lnkd.in/p/etXfN_hz" class="lookbook__journal-read-more" target="_blank">Stirnradgetriebe, Tellurium und Planetengetriebe</a>
+                  <span class="lookbook__journal-read-time">12 Juni, 2026</span>
+                </div>
+                <h4 class="lookbook__journal-content-title">Volles CAD Portfolio -> <a href="Antonio Drmac CAD Portfolio.pdf" class="contact-form__submit" target="_blank" >PDF</a></h4>
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Referenzen -->
+    <section class="lookbook__plate" data-plate="05">
+        <section class="lookbook__close" id="refe">
+        <h2 class="lookbook__close-heading">Referenz</h2>
+        <p class="lookbook__close-text">
+          Reiner fellenz LL.M.
+          <br>COO / CRO Mandates
+          <span class="lookbook__journal-tag"><a href="https://www.linkedin.com/in/fellenz/" target="_blank">LinkedIn</a></span>
+        </p>
+        <h4 class="lookbook__journal-content-title"><a href="https://lnkd.in/p/eh5zzwbQ" target="_blank">~Link zum Artikel~</a></h4>
+      </section>
+    </section>
+
+    <!-- Closing / Contact -->
+    <section class="lookbook__plate" data-plate="06">
+      <section class="lookbook__close" id="contact">
+        <h2 class="lookbook__close-heading">Kontakt</h2>
+        <p class="lookbook__close-text">
+          Für Auftragsarbeiten, Kooperationen und private Besichtigungen -
+          ich antworte innerhalb von vierundzwanzig Stunden.
+        </p>
+        <div class="contact-form">
+          <div class="contact-form__group">
+            <h5>Email</h5>>
+              antoniodrmac15@gmail.com
+          </div>
+          <div class="contact-form__group">
+            <h5>Telefonnummer</h5>>
+              +49 176 21162326
+      </section>
+    </section>
+  </main>
+
+  <!-- ============================================
+       INTERSECTION OBSERVER — Lens Reveal + Counter
+       ============================================ -->
+    <script src="fufufurweb.js"></script>
+</body>
+</html>
